@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Navbar from "@/Components/Navbar";
 
 export default function Home() {
   return (
@@ -39,12 +40,30 @@ export default function Home() {
           priority
         />
       </div>
-
+      <Link href="/search" className="bg-white text-black px-2 rounded-lg">
+        search
+      </Link>
+      {/* <Navbar /> */}
       <div className="span text-sm text-gray-500 opacity-90">
-        <p>contributers : </p> 
-        <Link className="mx-2 hover:text-white ease-in-out duration-700" href="https://github.com/ayushsonone07">@Nayan Jaiswal</Link> 
-        <Link className="mx-2 hover:text-white ease-in-out duration-700" href="https://github.com/ayushsonone07">@ayushsonone07</Link> 
-        <Link className="mx-2 hover:text-white ease-in-out duration-700" href="https://github.com/DeveshN02">@Devesh Namdeo</Link>
+        <p>contributers : </p>
+        <Link
+          className="mx-2 hover:text-white ease-in-out duration-700"
+          href="https://github.com/ayushsonone07"
+        >
+          @Nayan Jaiswal
+        </Link>
+        <Link
+          className="mx-2 hover:text-white ease-in-out duration-700"
+          href="https://github.com/ayushsonone07"
+        >
+          @ayushsonone07
+        </Link>
+        <Link
+          className="mx-2 hover:text-white ease-in-out duration-700"
+          href="https://github.com/DeveshN02"
+        >
+          @Devesh Namdeo
+        </Link>
       </div>
     </main>
   );
