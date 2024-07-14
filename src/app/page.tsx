@@ -43,7 +43,7 @@ export default function Home() {
       <Link href="/search" className="bg-white text-black px-2 rounded-lg">
         search
       </Link>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="span text-sm text-gray-500 opacity-90">
         <p>contributers : </p>
         <Link
