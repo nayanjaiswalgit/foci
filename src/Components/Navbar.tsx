@@ -7,7 +7,7 @@ import { RiHomeLine } from "react-icons/ri";
 
 export default function Navbar() {
   return (
-    <main className="flex fixed bottom-0 left-0 z-50 w-screen bg-white py-2 gap-3 md:gap-40 justify-center">
+    <main className="flex fixed bottom-0 z-50 w-screen bg-white py-2 gap-3 md:gap-40 justify-center">
       <Link href="/" className="text-black px-5 hover:text-violet-500">
         <RiHomeLine />
       </Link>
