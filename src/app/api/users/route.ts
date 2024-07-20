@@ -1,5 +1,10 @@
-import { NextResponse } from "next/server";
+import {NextRequest, NextResponse} from "next/server";
 
-export default function GET(requests : string) {
-    return NextResponse.json({message : "data found"})
+export default function GET(request: NextRequest) {
+    const greeting = "Hello World!!"
+    const json = {
+        greeting
+    };
+    
+    return NextResponse.json(json);
 }
