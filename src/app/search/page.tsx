@@ -7,7 +7,7 @@ export default function Signin() {
         <input
           type="text"
           placeholder="search account or post"
-          className="col-span-12 pl-3 py-2 text-black font-semibold rounded-lg"
+          className="col-span-12 pl-3 py-2 text-black font-semibold rounded-lg border-none"
         />
       </div>
     </main>
