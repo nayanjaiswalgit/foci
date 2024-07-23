@@ -16,30 +16,60 @@ export default function Home() {
       </Link>
       {/* POST */}
       <div className="grid grid-cols-12 justify-center">
-        <div className="col-span-12 md:col-span-6 shadow bg-white p-3 rounded-lg m-5">
+        <div className="col-span-12 md:col-span-6 shadow bg-transparent rounded-lg mx-1">
             <div className="flex justify-center my-2">
               <Image src={github} width={30} height={30}/>
               <p className="inline-block align-bottom text-sm font-bold text-black">Ayush Sonone</p>
             </div>
-            <Image src={Github} className="items-center rounded-2xl shadow-lg"/>
+            <Image src={Github} className="items-center rounded-2xl shadow-lg w-full"/>
             <h1 className="py-4">Apple Developer Academy introduces AI training for all students and alumni</h1>
-            <div className="flex gap-3 justify-center">
+            <div className="flex gap-3 justify-center bg-transparent">
               <button className="flex mx-7"><FcLike size={30}/></button>
               <button className="flex mx-7"><FaRegComments size={30}/></button>
               <button  className="flex mx-7"><PiShareThin size={30}/></button>
             </div>
         </div>
-        <div className="col-span-12 md:col-span-6 bg-white shadow p-3 rounded-lg m-5">
-            <Image src={Facebook} className="items-center rounded-lg"/>
-            <h1>New versions of Final Cut Pro for iPad and Mac available today</h1>
+
+        <div className="col-span-12 md:col-span-6 shadow bg-transparent p-3 rounded-lg mx-1">
+            <div className="flex justify-center my-2">
+              <Image src={github} width={30} height={30}/>
+              <p className="inline-block align-bottom text-sm font-bold text-black">Ansh Sonone</p>
+            </div>
+            <Image src={Github} className="items-center rounded-2xl shadow-lg w-full"/>
+            <h1 className="py-4">Apple Developer Academy introduces AI training for all students and alumni</h1>
+            <div className="flex gap-3 justify-center bg-transparent">
+              <button className="flex mx-7"><FcLike size={30}/></button>
+              <button className="flex mx-7"><FaRegComments size={30}/></button>
+              <button  className="flex mx-7"><PiShareThin size={30}/></button>
+            </div>
         </div>
-        <div className="col-span-12 md:col-span-6 bg-white shadow p-3 rounded-lg m-5">
-            <Image src={Facebook} className="items-center rounded-lg" />
-            <h1>New versions of Final Cut Pro for iPad and Mac available today</h1>
+
+        <div className="col-span-12 md:col-span-6 shadow bg-transparent p-3 rounded-lg mx-1">
+            <div className="flex justify-center my-2">
+              <Image src={github} width={30} height={30}/>
+              <p className="inline-block align-bottom text-sm font-bold text-black">Nayan jaiswal</p>
+            </div>
+            <Image src={Github} className="items-center rounded-2xl shadow-lg w-full"/>
+            <h1 className="py-4">Apple Developer Academy introduces AI training for all students and alumni</h1>
+            <div className="flex gap-3 justify-center bg-transparent">
+              <button className="flex mx-7"><FcLike size={30}/></button>
+              <button className="flex mx-7"><FaRegComments size={30}/></button>
+              <button  className="flex mx-7"><PiShareThin size={30}/></button>
+            </div>
         </div>
-        <div className="col-span-12 md:col-span-6 bg-white shadow p-3 rounded-lg m-5">
-            <Image src={Back} className="items-center rounded-lg" />
-            <h1>New versions of Final Cut Pro for iPad and Mac available today</h1>
+
+        <div className="col-span-12 md:col-span-6 shadow bg-transparent p-3 rounded-lg mx-1">
+            <div className="flex justify-center my-2">
+              <Image src={github} width={30} height={30}/>
+              <p className="inline-block align-bottom text-sm font-bold text-black">Devesh Namdeo</p>
+            </div>
+            <Image src={Github} className="items-center rounded-2xl shadow-lg w-full"/>
+            <h1 className="py-4">Apple Developer Academy introduces AI training for all students and alumni</h1>
+            <div className="flex gap-3 justify-center bg-transparent">
+              <button className="flex mx-7"><FcLike size={30}/></button>
+              <button className="flex mx-7"><FaRegComments size={30}/></button>
+              <button  className="flex mx-7"><PiShareThin size={30}/></button>
+            </div>
         </div>
       </div>
       {/* contributers */}
