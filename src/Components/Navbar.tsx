@@ -8,10 +8,11 @@ import { RiDoorLockLine } from "react-icons/ri";
 import { RiHomeLine } from "react-icons/ri";
 import { ClerkLoaded, ClerkLoading } from "@clerk/nextjs";
 import { SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
+import "./Navbar.css"
 
 export default function Navbar() {
   return (
-    <main className="flex fixed bottom-0 z-50 w-screen bg-white py-2 gap-3 md:gap-40 justify-center">
+    <main className="flex navbar bottom-0 z-50 w-screen bg-white py-2 gap-3 md:gap-40 justify-center">
       <Link href="/" className="text-black px-5 hover:text-violet-400 focus:text-violet-600 ">
         <RiHomeLine size={25} />
       </Link>
