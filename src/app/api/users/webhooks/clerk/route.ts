@@ -1,6 +1,10 @@
 import { Webhook } from 'svix'
 import { headers } from 'next/headers'
 import { WebhookEvent } from '@clerk/nextjs/server'
+// import { Prisma } from '@prisma/client'
+import { PrismaClient } from '@prisma/client/extension'
+
+const prisma = new PrismaClient;
 
 export async function POST(req: Request) {
 
@@ -51,8 +55,43 @@ export async function POST(req: Request) {
   // For this guide, you simply log the payload to the console
   const { id } = evt.data;
   const eventType = evt.type;
-  console.log(`Webhook with and ID of ${id} and type of ${eventType}`)
-  console.log('Webhook body:', body)
+  // console.log(`Webhook with and ID of ${id} and type of ${eventType}`)
+  // console.log('Webhook body:', body)
 
-  return new Response('', { status: 200 })
+  if(eventType === "user.created"){
+    try{
+      await prisma.User.create({
+        data:{
+          id:evt.data.id,
+          username: JSON.parse(body).data.username,
+          avatar: JSON.parse(body).data.image_url || "/noAvatar.png",
+          cover: "/noCover.png"
+        }
+      }) 
+      return new Response("User created!" ,{status: 200})
+    }catch(err){
+      return new Response("Failed user creation",{status:500})
+    }
+  }
+
+  if(eventType === "user.updated"){
+    try{
+      await prisma.User.update({
+        where: {
+          id:evt.data.id
+        },
+        data:{
+          id:evt.data.id,
+          username: JSON.parse(body).data.username,
+          avatar: JSON.parse(body).data.image_url || "/noAvatar.png",
+          cover: "/noCover.png"
+        }
+      }) 
+      return new Response("User updated!" ,{status: 200})
+    }catch(err){
+      return new Response("Failed user creation",{status:500})
+    }
+  }
+
+  return new Response("Webhook recieved!", { status: 200 })
 }
