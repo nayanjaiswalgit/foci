@@ -1,7 +1,7 @@
 ### Contributers
-- ayushsonone07[Github](https://github.com/ayushsonone07)
-- Nayan Jaiswal[Github](https://github.com/nayanjaiswalgit)
-- Devesh Namdeo[Github](https://github.com/DeveshN02)
+- ayushsonone07 [Github](https://github.com/ayushsonone07)
+- Nayan Jaiswal [Github](https://github.com/nayanjaiswalgit)
+- Devesh Namdeo [Github](https://github.com/DeveshN02)
 
   #  Add your name by editing this readme file and start contributing.
 
